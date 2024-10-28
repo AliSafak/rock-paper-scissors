@@ -1,0 +1,214 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #1e3252;
+    font-family: "Barlow Semi Condensed";
+
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* BURADAN İTİBAREN KENDİ CSS KODLARIM BULUNMAKTA */
+
+.container {
+    user-select: none;
+    margin: 32px;
+}
+.container-off {
+    user-select: none;
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #607087;
+    padding: 24px;
+    border-radius: 5px;
+    color: white;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 16px;
+    max-width: 700px;
+    margin-inline: auto;
+}
+
+.score-board {
+    background-color: white;
+    text-align: center;
+    padding: 10px 24px;
+    color: #2A45C2;
+    border-radius: 4px;
+}
+
+.score-board span {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #565468;
+}
+
+.hero {
+    background: url("../img/triangle-background.svg") no-repeat;
+    width: 312px; 
+    height: 282px;
+    margin-inline: auto;
+    margin-top: 50px;
+    background-position: center 65px;
+    background-size: 80%;
+}
+
+.hero img {
+    display: block;
+    margin-inline: auto;
+    cursor: pointer;
+}
+
+
+.hero-top  {
+    display: flex;
+    align-items: center;
+    padding-bottom:15px;
+    justify-content: space-between;
+}
+
+.hero-down img {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rulesBtn {
+    cursor: pointer;
+    color: white;
+    border: 1px solid  #2A45C2;
+    padding: 10px 36px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #1e3252;
+    margin-top: 139px;
+}
+
+button {
+    margin-inline: auto;
+    display: block;
+}
+
+.rules-img {
+    display: none;
+    background-color: white;
+    height: 100vh;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+
+
+
+.rules-img > img {
+    display: block;
+    margin-inline:auto;
+    margin-bottom: 130px;
+}
+
+.rules-img h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    color: #3B4262;
+    padding-block: 95px 113px;
+}
+
+.close-icon img {
+    display: block;
+    margin-inline: auto;
+    padding:5px
+}
+
+.close-icon img {
+    display: block;
+    cursor: pointer;
+}
+
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: flex;
+}
